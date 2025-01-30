@@ -19,7 +19,7 @@ int main (){
   // Pass each index to get friends data
   for (int i = 0; i < numOfFriends ; i++ )
     {
-      askData (myFriends[i], i);
+      askData (myFriends, i);
     }
   
 return 0;
@@ -34,6 +34,7 @@ void askData (personType friends, int index)
   cin >> friends[index].lastName;
 
   cout << "Enter person ["  << index + 1 << "] gender. Only enter one character :\n";
+  cin.ignore();
   friends[index].gender = cin.get();
 
   cout << "Enter person ["  << index + 1 << "] eye colour :\n";
