@@ -19,7 +19,7 @@ int main (){
   // Pass each index to get friends data
   for (int i = 0; i < numOfFriends ; i++ )
     {
-      askData (muFriends[i], i);
+      askData (myFriends[i], i);
     }
   
 return 0;
