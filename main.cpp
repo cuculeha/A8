@@ -28,19 +28,19 @@ return 0;
 void askData (personType &friends, int index)
 {
   cout << "Enter person ["  << index + 1 << "] first name :\n";
-  cin >> friends[index].firstName;
+  cin >> friends.firstName;
 
   cout << "Enter person ["  << index + 1 << "] last name :\n";
-  cin >> friends[index].lastName;
+  cin >> friends.lastName;
 
   cout << "Enter person ["  << index + 1 << "] gender. Only enter one character :\n";
   cin.ignore();
-  friends[index].gender = cin.get();
+  friends.gender = cin.get();
 
   cout << "Enter person ["  << index + 1 << "] eye colour :\n";
-  cin >> friends[index].eyeColour;
+  cin >> friends.eyeColour;
 
   cout << "Enter person ["  << index + 1 << "] date of birth :\n";
-  cin >> friends[index].dob;
+  cin >> friends.dob;
   
 }
