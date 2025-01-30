@@ -34,9 +34,9 @@ void askData (personType &friends, int index)
   cin >> friends.lastName;
 
   cout << "Enter person ["  << index + 1 << "] gender. Only enter one character :\n";
-  cin.ignore();
   friends.gender = cin.get();
-
+  cin.ignore();
+  
   cout << "Enter person ["  << index + 1 << "] eye colour :\n";
   cin >> friends.eyeColour;
 
