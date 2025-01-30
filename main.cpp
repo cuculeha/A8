@@ -27,7 +27,7 @@ return 0;
 
 void askData (personType &friends, int index)
 {
-  cout << "Enter Person ["  << index + 1 << "] First Name : ";
+  cout <<  setw (40) << left <<  "Enter Person ["  << index + 1 << "] First Name" << setw (3) << right<<  " : ";
   cin >> friends.firstName;
 
   cout << "Enter Person ["  << index + 1 << "] Last Name : ";
