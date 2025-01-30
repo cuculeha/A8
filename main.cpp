@@ -17,7 +17,7 @@ int main (){
   personType myFriends[numOfFriends];
 
   // Pass each index to get friends data
-  for (int i = 0; i < numOfFriends l i++ )
+  for (int i = 0; i < numOfFriends ; i++ )
     {
       askData (muFriends[i], i);
     }
