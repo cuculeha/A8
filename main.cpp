@@ -49,7 +49,7 @@ void askData (personType &friends, int index)
   cout << "Enter Person ["  << index + 1 << "] Eye Colour : ";
   cin >> friends.eyeColour;
 
-  cout << "Enter person ["  << index + 1 << "] Date of Birth : ";
+  cout << "Enter person ["  << index + 1 << "] Date of Birth (MM/DD/YYYY) : ";
   cin >> friends.dob;
 }
 
