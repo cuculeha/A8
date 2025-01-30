@@ -55,7 +55,7 @@ void askData (personType &friends, int index)
 
 void showData (const personType &friends, int index )
 {
-  cout << "Person << index + 1 << " information below \n";
+  cout << "Person << index + 1 << " information below " << endl ;
   cout << setw (15) << left << "First Name" << " : " << friends.firstName << '\n' ;
   cout << setw (15) << left << "Last Name" << " : " << friends.lastName << '\n' ;
   cout << setw (15) << left << "Gender" << " : " << friends.firstName << '\n' ;
