@@ -12,6 +12,8 @@ struct personType {
 
 const int numOfFriends = 5 ;
 void askData (personType &friends, int index);
+void showData (const personType &friends, int index );
+
 
 
 int main (){
@@ -21,6 +23,11 @@ int main (){
   for (int i = 0; i < numOfFriends ; i++ )
     {
       askData (myFriends[i], i);
+    }
+  
+    for (int i = 0; i < numOfFriends ; i++ )
+    {
+      showData (myFriends[i], i);
     }
   
 return 0;
@@ -44,5 +51,14 @@ void askData (personType &friends, int index)
 
   cout << "Enter person ["  << index + 1 << "] date of birth : ";
   cin >> friends.dob;
-  
+}
+
+void showData (const personType &friends, int index )
+{
+  cout << "Person << index + 1 << " information below \n";
+  cout << setw (15) << left << "First Name" << " : " << friends.firstName << '\n' ;
+  cout << setw (15) << left << "Last Name" << " : " << friends.lastName << '\n' ;
+  cout << setw (15) << left << "Gender" << " : " << friends.firstName << '\n' ;
+  cout << setw (15) << left << "Eye Colour" << " : " << friends.firstName << '\n' ;
+  cout << setw (15) << left << "Date of Birth" << " : " << friends.firstName << '\n' ;
 }
