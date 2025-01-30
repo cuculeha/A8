@@ -9,7 +9,7 @@ struct personType {
   string dob;
 };
 
-const numOfFriends = 5 ;
+const int numOfFriends = 5 ;
 void askData (personType friends, int index);
 
 
