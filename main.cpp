@@ -49,7 +49,7 @@ void askData (personType &friends, int index)
   cout << "Enter Person ["  << index + 1 << "] Eye Colour : ";
   cin >> friends.eyeColour;
 
-  cout << "Enter person ["  << index + 1 << "] date of birth : ";
+  cout << "Enter person ["  << index + 1 << "] Date of Birth : ";
   cin >> friends.dob;
 }
 
@@ -58,7 +58,7 @@ void showData (const personType &friends, int index )
   cout << "Person " << index + 1 << " information below \n";
   cout << setw (15) << left << "First Name" << " : " << friends.firstName << '\n' ;
   cout << setw (15) << left << "Last Name" << " : " << friends.lastName << '\n' ;
-  cout << setw (15) << left << "Gender" << " : " << friends.firstName << '\n' ;
-  cout << setw (15) << left << "Eye Colour" << " : " << friends.firstName << '\n' ;
-  cout << setw (15) << left << "Date of Birth" << " : " << friends.firstName << '\n' ;
+  cout << setw (15) << left << "Gender" << " : " << friends.gender << '\n' ;
+  cout << setw (15) << left << "Eye Colour" << " : " << friends.eyeColour << '\n' ;
+  cout << setw (15) << left << "Date of Birth" << " : " << friends.dob << '\n' ;
 }
