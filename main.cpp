@@ -10,7 +10,7 @@ struct personType {
 };
 
 const int numOfFriends = 5 ;
-void askData (personType friends, int index);
+void askData (personType &friends, int index);
 
 
 int main (){
@@ -19,13 +19,13 @@ int main (){
   // Pass each index to get friends data
   for (int i = 0; i < numOfFriends ; i++ )
     {
-      askData (myFriends, i);
+      askData (myFriends[i], i);
     }
   
 return 0;
 }
 
-void askData (personType friends, int index)
+void askData (personType &friends, int index)
 {
   cout << "Enter person ["  << index + 1 << "] first name :\n";
   cin >> friends[index].firstName;
