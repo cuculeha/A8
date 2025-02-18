@@ -1,5 +1,8 @@
-run-test: main.cpp
-	g++ -std=c++20 -Wall -Werror -o run-test main.cpp
+run-test: main.cpp personType.o
+	g++ -std=c++20 -Wall -Werror -o run-test main.cpp personType.o
+
+personType.o : personType.cpp
+	g++ -std=c++20 -Wall -Werror -c personType.cpp 
 
 clean:
 	-rm *.o run-test
