@@ -4,44 +4,58 @@
 
 using namespace std;
 
-void getDatafromUser ();
+const int SIZE = 5;
 
 int main ()
 {
-  string firstName, lastName, address, dob;
-  double height_inches;
-  char gender;
+	// Created an array of 5 objects uninitialized
+	personType people [SIZE];
+	
+	// Get the data for each object and store them in private members of class
 
-  cout << "First Name : ";
-  getline (cin, firstName );
+	for (int i  = 0; i < SIZE; i++ )
+		{
+			string firstName, lastName, address, dob;
+  			double height_inches;
+  			char gender;
+			cout << "Enter data for person " << i + 1 << endl;
+  			cout << "First Name : ";
+  			getline (cin, firstName );
 
-  cout << "Last Name  : ";
-  getline (cin, lastName );
+ 			cout << "Last Name  : ";
+  			getline (cin, lastName );
 
-  cout << "Address    : ";
-  getline (cin, address );
+  			cout << "Address    : ";
+ 		 	getline (cin, address );
 
-  cout << "Height     : ";
-  cin >> height_inches;
-  cin.ignore();
+  			cout << "Height     : ";
+  			cin >> height_inches;
+  			cin.ignore();
    
-  cout << "DOB        : ";
-  getline (cin, dob );
+  			cout << "DOB        : ";
+  			getline (cin, dob );
 
-  cout << "Gender(M/F) : ";
-  cin >> gender;
-  cin.ignore();
+  			cout << "Gender(M/F) : ";
+ 		 	cin >> gender;
+ 		 	cin.ignore();
 
-  personType person;         // Created an object of one person
-    person.setFName(firstName);
-    person.setLName(lastName);
-    person.setAddress(address);
-    person.setHeight(height_inches);
-    person.setDOB(dob);
-    person.setGender(gender);
+        // Insert the data into private members of class
+    		people[i].setFName(firstName);
+    		people[i].setLName(lastName);
+    		people[i].setAddress(address);
+    		people[i].setHeight(height_inches);
+    		people[i].setDOB(dob);
+    		people[i].setGender(gender);
+		}
 
-  // Print the information
-  person.print();
+	// Clear the information and print the names
+   // Print the information
+ 		cout << "All persons information..\n";
+		for (int i = 0 ; i < SIZE ; i++)
+		{
+			cout << "Person " << i + 1 << " information : \n";
+			people[i].print();
+		}
   
   return 0;
 }
