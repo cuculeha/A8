@@ -19,9 +19,9 @@ class personType
 	void getFName (string &fN) const;
 	void getLName (string &lN) const;
 	void getAddress (string &addr ) const;
-	void getHeight (double &ht );
-	void getDOB (string &bdate);
-	void getGender (char &gen);
+	void getHeight (double &ht ) const;
+	void getDOB (string &bdate) const;
+	void getGender (char &gen) const;
 
 	// Print function 
 	void print () const;
