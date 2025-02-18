@@ -16,7 +16,7 @@ void showData (const personType &friends, int index );
 
 
 
-int main (){
+int notmain (){
   personType myFriends[numOfFriends];
 
   // Pass each index to get friends data
