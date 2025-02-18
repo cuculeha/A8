@@ -20,7 +20,7 @@ void personType :: setAddress (string addr )
 		address = addr;
 }
 
-void personType :: setHeight (string ht)
+void personType :: setHeight (double ht)
 {
 		height = ht;
 }
@@ -30,7 +30,7 @@ void personType :: setDOB (string bdate)
 		DOB = bdate;
 }
 
-void personType :: setGender (string gen)
+void personType :: setGender (char gen)
 {
 		gender = gen;
 }
@@ -42,7 +42,7 @@ void personType :: getFName ( string &fN ) const
 	fN = fName;
 }
 
-void personType :: getFLName ( string &lN ) const
+void personType :: getLName ( string &lN ) const
 {
 	lN = lName;
 }
@@ -52,7 +52,7 @@ void personType :: getAddress ( string &addr ) const
 	addr = address;
 }
 
-void personType :: getHeight ( string &ht ) const
+void personType :: getHeight ( double &ht ) const
 {
 	ht = height;
 }
@@ -62,7 +62,7 @@ void personType :: getDOB ( string &bdate ) const
 	bdate = DOB;
 }
 
-void personType :: getGender ( string &gen ) const
+void personType :: getGender ( char &gen ) const
 {
 	gen = gender;
 }
@@ -82,7 +82,7 @@ void personType :: print () const
 // equals strings
 bool personType :: equalData (const personType &person2) const
 {
-	if (fName == person2.fName && lName == person2.lName && address == person2.address
+	if (fName == person2.fName && lName == person2.lName && address == person2.address &&
 		height == person2.height && DOB == person2.DOB && gender == person2.gender)
 		{
 			return true;
