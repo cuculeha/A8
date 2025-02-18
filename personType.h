@@ -1,5 +1,5 @@
 #ifndef PERSONTYPE_H
-#define PERSNTYPE_H
+#define PERSONTYPE_H
 
 #include <string>
 using namespace std;
@@ -27,13 +27,15 @@ class personType
 	void print () const;
 
 	// Equal function
-	bool equal ( const personType &person2 ) const;
+	bool equalData ( const personType &person2 ) const;
 
 	private:
 	string fName;
 	string lName;
-	string address:
+	string address;
 	double height;
 	string DOB;
 	char gender;
 };
+
+#endif
