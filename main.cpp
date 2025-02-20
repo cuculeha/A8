@@ -1,5 +1,6 @@
 // This is main cpp
 #include <iostream>
+#include <cstdlib>
 #include "personType.h"
 
 using namespace std;
@@ -46,6 +47,7 @@ int main ()
     			people[i].setGender(gender);
 		}
 
+		system ("clear");
  		cout << "\n..All persons information..\n";
 		for (int i = 0 ; i < SIZE ; i++)
 		{
