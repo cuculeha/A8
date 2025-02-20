@@ -71,11 +71,11 @@ char personType :: getGender () const
 // print function
 void personType :: print () const
 {
-	cout << "Full Name : " << getFName() << " " << getLName() << endl;
+	cout << "------------------------------------------------------------------\n";
+	cout << "Full Name : " << getFName() << " " << getLName() << "  DOB: " << getDOB() << endl;
 	cout << "Address : " << getAddress() << endl;
 	cout << "Gender: " << setw (4) << left << getGender();
-	cout << "Height: " << setw (4) << left << getHeight() << " inches";
-	cout << "DOB: " << getDOB() << endl;
+	cout << "Height: " << getHeight() << " inches";
 }
 
 // equals strings
