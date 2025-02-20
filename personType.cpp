@@ -37,46 +37,46 @@ void personType :: setGender (char gen)
 
 
 // Getters definition
-void personType :: getFName ( string &fN ) const
+string personType :: getFName () const
 {
-	fN = fName;
+	return fName;
 }
 
-void personType :: getLName ( string &lN ) const
+string personType :: getLName () const
 {
-	lN = lName;
+	return lName;
 }
 
-void personType :: getAddress ( string &addr ) const
+string personType :: getAddress () const
 {
-	addr = address;
+	return address;
 }
 
-void personType :: getHeight ( double &ht ) const
+double personType :: getHeight () const
 {
-	ht = height;
+	return height;
 }
 
-void personType :: getDOB ( string &bdate ) const
+string personType :: getDOB () const
 {
-	bdate = DOB;
+	return DOB;
 }
 
-void personType :: getGender ( char &gen ) const
+char personType :: getGender () const
 {
-	gen = gender;
+	return gender;
 }
 
 // print function
 void personType :: print () const
 {
 	cout << "All persons information...\n";
-	cout << "First Name : " << fName << endl;
-	cout << "Last Name  : " << lName << endl;
-	cout << "Address    : " << address << endl;
-	cout << "Height     : " << height << endl;
-	cout << "DOB        : " << DOB << endl;
-	cout << "Gender     : " << gender << endl;
+	cout << "First Name : " << getFName() << endl;
+	cout << "Last Name  : " << getLName() << endl;
+	cout << "Address    : " << getAddress() << endl;
+	cout << "Height     : " << getHeight() << endl;
+	cout << "DOB        : " << getDOB() << endl;
+	cout << "Gender     : " << getGender() << endl;
 }
 
 // equals strings
