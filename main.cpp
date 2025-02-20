@@ -11,44 +11,41 @@ int main ()
 	// Created an array of 5 objects uninitialized
 	personType people [SIZE];
 	
+	string firstName, lastName, address, dob;
+  	double height_inches;
+  	char gender;
+	
 	// Get the data for each object and store them in private members of class
-
-	for (int i  = 0; i < SIZE; i++ )
+	for ( int i  = 0; i < SIZE; i++ )
 		{
-			string firstName, lastName, address, dob;
-  			double height_inches;
-  			char gender;
 			cout << "Enter data for person " << i + 1 << endl;
   			cout << "First Name : ";
   			getline (cin, firstName );
-
+			people[i].setFName(firstName);
+			
  			cout << "Last Name  : ";
   			getline (cin, lastName );
-
+			people[i].setLName(lastName);
+			
   			cout << "Address    : ";
  		 	getline (cin, address );
-
+			people[i].setAddress(address);
+			
   			cout << "Height     : ";
   			cin >> height_inches;
   			cin.ignore();
-   
+   			people[i].setHeight(height_inches);
+			
   			cout << "DOB        : ";
   			getline (cin, dob );
+			people[i].setDOB(dob);
 
   			cout << "Gender(M/F) : ";
  		 	cin >> gender;
  		 	cin.ignore();
-
-        // Insert the data into private members of class
-    		people[i].setFName(firstName);
-    		people[i].setLName(lastName);
-    		people[i].setAddress(address);
-    		people[i].setHeight(height_inches);
-    		people[i].setDOB(dob);
-    		people[i].setGender(gender);
+    			people[i].setGender(gender);
 		}
 
-	// Clear the information and print the names
    // Print the information
  		cout << "All persons information..\n";
 		for (int i = 0 ; i < SIZE ; i++)
