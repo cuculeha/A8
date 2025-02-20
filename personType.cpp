@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 #include "personType.h"
 
 using namespace std;
@@ -70,13 +71,11 @@ char personType :: getGender () const
 // print function
 void personType :: print () const
 {
-	cout << "All persons information...\n";
-	cout << "First Name : " << getFName() << endl;
-	cout << "Last Name  : " << getLName() << endl;
-	cout << "Address    : " << getAddress() << endl;
-	cout << "Height     : " << getHeight() << endl;
-	cout << "DOB        : " << getDOB() << endl;
-	cout << "Gender     : " << getGender() << endl;
+	cout << "Full Name : " << getFName() << " " << getLName() << endl;
+	cout << "Address : " << getAddress() << endl;
+	cout << "Gender: " << setw (4) << left << getGender();
+	cout << "Height: " << setw (4) << left << getHeight() << " inches";
+	cout << "DOB: " << getDOB() << endl;
 }
 
 // equals strings
