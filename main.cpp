@@ -56,11 +56,11 @@ int main ()
 	// Compare data
 	cout << "Is person 1's data equal to person 2's data ? ";
 	cout << std:: boolalpha;
-	cout << people[0].equalData (person[1]) << endl;
+	cout << people[0].equalData (people[1]) << endl;
 	
 	cout << "Is person 3's data equal to person 5's data ? ";
 	cout << std:: boolalpha;
-	cout << people[2].equalData (person[4]) << endl;
+	cout << people[2].equalData (people[4]) << endl;
 	
   
   return 0;
