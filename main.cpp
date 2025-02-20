@@ -4,7 +4,7 @@
 
 using namespace std;
 
-const int SIZE = 2;
+const int SIZE = 5;
 
 int main ()
 {
