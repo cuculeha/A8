@@ -75,7 +75,7 @@ void personType :: print () const
 	cout << "Address : " << getAddress() << endl;
 	cout << "Gender  : " << setw (2) << left << getGender();
 	cout << setw(9) << right << "DOB     : " << getDOB ();
-	cout << setw(9) << right << "Height  : " << getHeight() << " inches\n;
+	cout << setw(9) << right << "Height  : " << getHeight() << " inches\n";
 	cout << "--------------------------------------------------------------\n";
 }
 
