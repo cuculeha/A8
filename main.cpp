@@ -46,7 +46,6 @@ int main ()
     			people[i].setGender(gender);
 		}
 
-   // Print the information
  		cout << "All persons information..\n";
 		for (int i = 0 ; i < SIZE ; i++)
 		{
