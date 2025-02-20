@@ -71,7 +71,7 @@ char personType :: getGender () const
 // print function
 void personType :: print () const
 {
-	cout << "------------------------------------------------------------------\n";
+	cout << "******************************************************************\n";
 	cout << "Full Name : " << getFName() << " " << getLName() << "  DOB: " << getDOB() << endl;
 	cout << "Address : " << getAddress() << endl;
 	cout << "Gender: " << setw (4) << left << getGender();
