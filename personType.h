@@ -1,6 +1,7 @@
 #ifndef PERSONTYPE_H
 #define PERSONTYPE_H
 
+#include <iostream>
 #include <string>
 using namespace std;
 
@@ -16,12 +17,12 @@ class personType
 	void setGender ( char gen);
 
 	// Getters
-	void getFName (string &fN) const;
-	void getLName (string &lN) const;
-	void getAddress (string &addr ) const;
-	void getHeight (double &ht ) const;
-	void getDOB (string &bdate) const;
-	void getGender (char &gen) const;
+	string getFName () const;
+	string getLName () const;
+	string getAddress () const;
+	double getHeight () const;
+	string getDOB () const;
+	char getGender () const;
 
 	// Print function 
 	void print () const;
