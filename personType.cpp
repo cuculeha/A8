@@ -23,7 +23,14 @@ void personType :: setAddress (string addr )
 
 void personType :: setHeight (double ht)
 {
-		height = ht;
+	if (ht < 10) {
+	height = 10;}
+
+	else if (ht > 100 ){
+	height = 100;}
+
+	else
+	height = ht;
 }
 
 void personType :: setDOB (string bdate)
@@ -33,6 +40,12 @@ void personType :: setDOB (string bdate)
 
 void personType :: setGender (char gen)
 {
+	if (gen != 'M' && gen != 'm' && gen != 'F' && gen != 'f')
+	{
+		gender = 'X';
+	}
+
+	else
 		gender = gen;
 }
 
